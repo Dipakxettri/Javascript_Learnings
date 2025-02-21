@@ -43,3 +43,15 @@ let arryStr = ["Deepak ","Shyam"];
 for(value of arryStr){
   document.write(value.toUpperCase());//this will print an arryStr in upper case 
 }
+
+
+// methods :
+let arry = [2,4,6,8];
+
+// 1. push
+// arry.push(6) - add value
+
+// pop 
+// arry.pop() - remove value of last
+
+
