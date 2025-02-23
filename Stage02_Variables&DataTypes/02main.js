@@ -36,3 +36,5 @@ const student = {//object can be update even with const
 console.log(student["fullName"]);
 //or
 console.log(student.age);
+
+  
