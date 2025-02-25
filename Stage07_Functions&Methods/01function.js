@@ -17,7 +17,7 @@ functionName(2,8);//arguments - The 2 will be for parameter 1 and 8 will be for 
 
 let nameV = "Deepak";
 function name(n){
-  console.log(nameV)
+  console.log(n)
 }
 
 name(nameV);

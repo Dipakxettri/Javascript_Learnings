@@ -3,10 +3,10 @@ const student = {
     rollno: 22,
 }
 
-const {name} = student //De Structure Syntax
+const {name} = student; //De Structure Syntax
 
-const {name:n} = student //De Structure with custom name
+const {name:n} = student; //De Structure with custom name
 
 
 console.log(n);
-console.log(student)
+console.log(student);
