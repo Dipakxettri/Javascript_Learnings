@@ -1,47 +1,77 @@
-// Number of Vowels check in an String
+// Faulty Calculator which performs the wrong operations with probability of 10%.
 
-//code 1 using function keyboard:
-function vowelCheck(w){
-  let word = w.toLowerCase();
-  let count = 0;
-    for(let i = 0; i<word.length; i++){
-      if(word[i] == "a" || word[i] == "e" || word[i] == "i" || word[i] == "o" || word[i] == "u"){
-        count ++;
-      }
-    }
-    return count;
+//Result
+let result = 0;
+
+//looping boolean
+let isRun = true;
+
+//function for right operations 
+function rightOperend(num1,o,num2){
+  if (o == '+'){
+    result = num1 + num2;
+    isRun = false;
+  }
+  else if (o == '-'){
+    result = num1 - num2;
+    isRun = false;
+  }
+  else if (o == '*'){
+    result = num1 * num2;
+    isRun = false;
+  }
+  else if(o == '/'){
+    result = num1 / num2;
+    isRun = false;
+  }
+  else{
+    alert("  Invilid input try again");
+  }
 }
-console.log(vowelCheck("SHYAM"));
 
-
-//code 2 using an Arrow Function :
-const vowelCheck2 = (w) => {
-  let word2 = w.toLowerCase();
-  let count2 = 0;
-    for(let i = 0; i<word2.length; i++){
-      if(word2[i] == "a" || word2[i] == "e" || word2[i] == "i" || word2[i] == "o" || word2[i] == "u"){
-        count2 ++;
-      }
-    }
-    return count2;
+//function for wrong operations
+function wrongOperend(num1,o,num2){
+  if (o == '+'){
+    result = num1 - num2;
+    isRun = false;
+  }
+  else if (o == '-'){
+    result = num1 / num2;
+    isRun = false;
+  }
+  else if (o == '*'){
+    result = num1 + num2;
+    isRun = false;
+  }
+  else if(o == '/'){
+    result = num1 ** num2;
+    isRun = false;
+  }
+  else{
+    alert("  Invilid input try again");
+  }
 }
-console.log(vowelCheck2("DEEPAK"));
+""
+//Random probability 
+let probability = Math.floor(Math.random() * 100) + 1;
 
+//user input
+//check probability 
+while(isRun){
+  let num1 = parseFloat(prompt("  Enter 1st Number :"));
+let operator = prompt("  Enter operand :");
+let num2 = parseFloat(prompt("  Enter 2nd Number :"));
 
-//code 1 's improved verson suggested by ChatGPT :
-/*function vowelCheck(w) {
-  let word = w.toLowerCase();
-  let count = 0;
-  const vowels = ["a", "e", "i", "o", "u"];
-  
-  for (let i = 0; i < word.length; i++) {
-    if (vowels.includes(word[i])) {
-      count++;
-    }
+  if(probability <= 10){
+    rightOperend(num1,operator, num2);
   }
   
-  return count;
+else{
+  wrongOperend(num1,operator, num2);
+}
 }
 
-console.log(vowelCheck("SHYAM"));
-*/
+//print result
+console.log(result);
+
+
