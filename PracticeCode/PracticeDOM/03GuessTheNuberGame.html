@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 1.6em;
+            background-color: rgb(77, 133, 133);
+            font-family: poppins;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        #instruction {
+            font-size: 0.7em;
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 240px;
+            padding: 10px;
+            font-size: 0.6em;
+            border-radius: 20px;
+        }
+
+        button {
+            border: none;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        #reset:hover {
+            background-color: red;
+        }
+
+        #submit:hover {
+            background-color: blue;
+        }
+
+        @media (max-width: 600px) {
+            h2{
+                font-size: 1.4em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Guess The Number Game</h2>
+        <p id="instruction">guess number from 1 to 10 you have only 4 time to guess</p>
+        <input type="input" placeholder="Guess The Number" id="input">
+        <button id="reset">Reset</button>
+        <button id="submit">Submit</button>
+        <p id="remaning">Attempts: 4</p>
+        <p id="score">Score:</p>
+        <p id="result">Result:</p>
+    </div>
+
+    <script src="02script.js"></script>
+</body>
+
+</html>
