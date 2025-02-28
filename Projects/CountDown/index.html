@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input{
+            width: 340px;
+            padding: 10px;
+        }
+
+        button{
+            border: none;
+            height: 30px;
+            width: 70px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="number" placeholder="enter count down in an seconds">
+        <button>Submit</button>
+        <br>
+            <span>Timer:</span>
+       
+    </div>
+
+    <script>
+        const inputF = document.querySelector('input')
+        const btn = document.querySelector('button')
+        const timerF = document.querySelector('span')
+
+        btn.addEventListener('click', () => {
+            let start = inputF.value;
+            const id = setInterval( () => {
+                start = start - 1;
+                timerF.innerHTML = `Timer : ${start}`
+                if(start === 0){
+                    clearInterval(id)
+                }
+            },1000)
+        })
+    </script>
+    
+</body>
+</html>

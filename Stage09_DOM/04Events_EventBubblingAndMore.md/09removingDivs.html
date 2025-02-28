@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div>first</div>
+        <div>second</div>
+        <div>first</div>
+        <div>first</div>
+        <div>first</div>
+        <div>first</div>
+        <div>first</div>
+        <div>first</div>
+    </div>
+
+
+    <script>
+        const container = document.querySelector('.container').addEventListener("click", (e) => {
+            e.target.remove();
+            
+        })
+
+    </script>
+</body>
+</html>

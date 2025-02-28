@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        parent
+        <div id="child">
+            child
+        </div>
+    </div>
+
+    <div id="owl">Owl</div>
+    <script>
+
+        //Not Recommended:
+        // document.getElementById('owl').onclick = function(){
+        //     alert("own Clicked");
+        // }
+
+
+        //attachEvent()
+        //jQuery - on event 
+
+
+        //Recommended:
+        // document.getElementById('owl').addEventListener('click', () => {
+        //     alert("Owl Clicked again")
+        // })
+
+        
+        //Event object:
+        // document.getElementById('owl').addEventListener('click', (event) => {
+        //     console.log(event)
+        // }, false)
+
+
+        // Learn these :
+        //type, timestamp, defaultPrevented
+        //target, toElement, srcElement, currentTarget,
+        //clintX, clintY, screenX, screenY
+        //altKey, ctrlKey, shiftKey, keyCode
+
+
+        // event propegation/Boobling up - false: bubbling, true:campturing:
+        document.getElementById('parent').addEventListener("click", () => {
+            console.log("clicked inside the parent");
+        },true)
+
+        document.getElementById('child').addEventListener("click", (e) => {
+            console.log("child click");
+            e.stopPropagation() //stop propagation
+        },true)
+
+
+
+
+
+    </script>
+
+</body>
+</html>

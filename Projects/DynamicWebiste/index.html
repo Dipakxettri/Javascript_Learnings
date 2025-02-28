@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Card with Dynamically Changed content</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            color: white;
+        }
+
+        .card{
+            margin: auto;
+            height: 180px;
+            width: 90vw;
+            /* background-color: white; */
+        }
+
+        img{
+            border-radius: 20px;
+
+        }
+
+        .image{
+            height: 20px;
+        }
+
+        .contents{
+            margin-left: 290px;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .lower{
+            display: flex;
+            gap: 20px;
+        }
+        h2{
+            font-size: 2.6em;
+        }
+
+        p{
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="Screenshot from 2025-01-16 19-58-26.png" alt="" height="180px">
+            </div>
+            <div class="contents">
+                <div class="titleC">
+                    <h2 id="title">Title</h2>
+                </div>
+                <div class="lower">
+                    <p id="channel-name">Chennel name</p>
+                    <p id="views">Views</p>
+                    <p id="time">Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
