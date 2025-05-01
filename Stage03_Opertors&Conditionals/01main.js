@@ -17,7 +17,6 @@ multi line comment
 5) Tinary 
 => syntax:
 condition? trueOutput : falseOutput
-*/
 //code:
 let age = 18;
 let result = age>18? " adult " : "not adult";

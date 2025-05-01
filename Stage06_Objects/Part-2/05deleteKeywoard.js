@@ -5,8 +5,6 @@ const obj = {
 };
 
 delete obj.age; //Delets the age 
-
 for (const key in obj) {
     console.log(key);
-    
 }

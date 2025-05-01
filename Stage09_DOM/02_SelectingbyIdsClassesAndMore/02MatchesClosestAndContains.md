@@ -13,7 +13,7 @@
 
 ## `closest` Method
 - **Syntax**: `element.closest("selector")`
-- **Description**: Starts from the given element and traverses up the DOM tree until it finds the closest ancestor (or itself) that matches the specified selector. Returns `null` if no matching ancestor is found.
+- **Description**: Starts from the giv  en element and traverses up the DOM tree until it finds the closest ancestor (or itself) that matches the specified selector. Returns `null` if no matching ancestor is found.
 - **Example**:
 ```js
 const element = document.querySelector(".myElement");
@@ -26,8 +26,8 @@ console.log(closestDiv); // Logs the closest <div> ancestor or itself
 - **Description**: Checks if a parentNode contains the specified childNode. Returns `true` if it does; otherwise, `false`.
 - **Example**:
 ```js
-const parent = document.getElementById("parentElement");
-const child = document.getElementById("childElement");
+const parent = document.getElementById("parentElement"); // parent element
+const child = document.getElementById("childElement");// child element
 console.log(parent.contains(child)); // true if 'childElement' is inside 'parentElement'
 ```
 
@@ -38,3 +38,7 @@ console.log(parent.contains(child)); // true if 'childElement' is inside 'parent
 | `matches`  | Checks if an element matches a CSS selector            | `Boolean`           |
 | `closest`  | Finds the nearest ancestor that matches a CSS selector | Element or `null`   |
 | `contains` | Checks if a node contains another specified node       | `Boolean`           |
+
+
+
+<!-- math meths -->

@@ -95,9 +95,3 @@ console.log('Previous Sibling Node:', previousSibling);
 const previousElementSibling = secondChild.previousElementSibling;
 console.log('Previous Element Sibling:', previousElementSibling);
 ```
-
-
-
-
-
-
