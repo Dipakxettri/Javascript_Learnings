@@ -6,3 +6,4 @@ let student = {
 };
 
 console.log(student["name"]);
+
