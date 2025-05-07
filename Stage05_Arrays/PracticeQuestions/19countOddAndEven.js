@@ -23,7 +23,7 @@ let merged = [...arry1,...arry2]
 let stringArry = merged.toString();
 console.log(stringArry);
 
-// find the laegest number in an array
+// find the largest number in an array
 let arry3 = [1,2,3,4];
 let max = -2882822;
 
