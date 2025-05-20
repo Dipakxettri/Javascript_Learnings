@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        p{
+            font-size: 2em;
+        }
+
+        .container{
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row{
+            display: flex;
+            
+        }
+
+        .feild{
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        #reset{
+            margin-top: 20px;
+            border: none;
+            height: 30px;
+            width: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p id="turn">X</p>
+    <div class="container">
+        <div class="row">
+            <div class="feild f1"></div>
+            <div class="feild f2"></div>
+            <div class="feild f3"></div>
+        </div>
+         <div class="row">
+            <div class="feild f4"></div>
+            <div class="feild f5"></div>
+            <div class="feild f6"></div>
+        </div>
+         <div class="row">
+            <div class="feild f7"></div>
+            <div class="feild f8"></div>
+            <div class="feild f9"></div>
+        </div>
+         <button id="reset">Reset</button>
+         
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -31,15 +31,15 @@
 
 <!-- Reverse an array (manually, without reverse()) -->
 
-Remove all duplicates from an array
+<!-- Remove all duplicates from an array -->
 
-Sort an array without using sort()
+<!-- Sort an array without using sort() -->
 
-Merge two arrays into one
+<!-- Merge two arrays into one -->
 
-Flatten a nested array (1 level deep)
+<!-- Flatten a nested array (1 level deep) -->
 
-Count how many times each value appears in an array
+<!-- Count how many times each value appears in an array -->
 
 Find the second largest and second smallest number
 

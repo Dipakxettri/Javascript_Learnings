@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 40px;
+
+
+    }
+
+    p{
+        font-size: 2em;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+
+    .btn{
+        height: 60px;
+        width: 200px;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+
+
+    <p id="turn">Your Turn </p>
+    <div class="buttons">
+        <button class="btn">Rock</button>
+        <button class="btn">Paper</button>
+        <button class="btn">Scissors</button>
+        <button class="reset">Reset?</button>
+
+    </div>
+    <div class="display">
+        <p class="win">Win:</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

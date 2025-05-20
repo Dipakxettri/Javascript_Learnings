@@ -20,7 +20,7 @@ let updatedArry = arry.toString();// - create an copy array and then convert not
 let concatArry = arry.concat(arry2); // - joins array and array2 but not in orginal one - can be concat multiple arrays more then 2
 
 //5. unsift() - add to start & return 
-//arry.unsift(2); 
+arry.unsift(2); 
 
 //6. shift() - delete from start & return 
 arry.shift(); // - delete an value 4 in orginal array 
@@ -30,4 +30,12 @@ let sliceArry = arry.slice(2,4); // - slice the array in copy array not on orgin
 
 //8. splice() - splice(startindex,delete,newelement) - change orginal array which can add,remove and replace
 arry.splice(0,1);
+
+// 9. filter() - array.filter((element, index, array) - .filter() is an array method that lets you select specific items from an array based on a condition. It returns a new array with only the items that pass the test (i.e., for which the condition is true).
+let filtred = arry.filter(i => i %2 == 0);
+
+// 10. includes() - .includes() checks if a string (or array) contains a specific value. It returns true if found, false if not.
+let includes = arry.includes(2); // true because 2 exist in an "arry"
+
+
 

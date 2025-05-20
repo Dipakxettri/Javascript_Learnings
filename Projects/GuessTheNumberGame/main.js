@@ -13,7 +13,7 @@ let numGuess = 1
 let playGame = true
 
 if(playGame){
-    submit.addEventListener('click', function(e){
+    submit.addEventListener('click', (e) => {
         e.preventDefault()
         const guess = parseFloat(userInput.value)
         console.log(guess);

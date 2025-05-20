@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="search" class="input">
+    <div class="results"></div>
+
+    <!-- Q: Filter and display results from an array in real-time as the user types. -->
+    <script>
+
+        let items = ["matrix","titanic","excrorist","spiderman","haridetry","endgame"];
+        const result = document.querySelector(".results");
+        const input = document.querySelector(".input");
+
+        input.addEventListener('input', () => {
+            result.innerHTML = '';
+            if (result.value != "") {
+                const filtered = items.filter(i => i.toLowerCase().includes(input.value.toLowerCase()));
+                filtered.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    result.appendChild(li);
+                });
+
+
+            };
+        })
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Q: Given an array of strings, render each item as a <li> inside a <ul>. -->
+
+    <script>
+
+
+
+        let ulTag = document.createElement("ul");
+        ulTag.setAttribute("class", "ul")
+        document.body.append(ulTag);
+        let ul = document.querySelector(".ul");
+
+        let a = 1;
+        while (a <= 4) {
+            let array = [];
+            let num = Number(prompt("Enter Numbers"));
+            array.push(num);
+
+            array.forEach(element => {
+                let liTag = document.createElement("li");
+                ul.append(liTag);
+                liTag.setAttribute("class", "li")
+                liTag.innerHTML = element;
+
+                let resetB = document.createElement("button");
+                resetB.innerHTML = "reset";
+                resetB.setAttribute("class", "reset");
+
+                liTag.append(resetB)
+
+                resetB.addEventListener("click", () => {
+                    liTag.remove();
+                })
+
+
+            });
+            a++
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,20 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #d3cce3, #e9e4f0);
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .toggleButton {
+      margin-bottom: 20px;
+    }
+
+    .toggleButton button {
+      height: 30px;
+      padding: 0 20px;
+      border: none;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .toggleButton button:hover {
+      background-color: #555;
+    }
+
+    .calc {
+      width: 320px;
+      background-color: white;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 20px 10px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .row1 {
+      margin-top: 5px;
+    }
+
+    input {
+      background-color: rgb(106, 129, 211);
+      width: 90%;
+      height: 60px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 0 10px;
+      text-align: right;
+      border: none;
+    }
+
+    .button {
+      width: 60px;
+      height: 60px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.1s ease;
+    }
+
+    .button:active {
+      transform: scale(0.95);
+    }
+
+    .percentage, .root, .ce, .equal {
+      background-color: #f2f2f2;
+    }
+
+    .clear {
+      background-color: rgb(86, 85, 85);
+      color: white;
+    }
+
+    .sub {
+      background-color: red;
+      color: white;
+    }
+
+    .devide {
+      background-color: rgba(6, 168, 243, 0.895);
+      color: white;
+    }
+
+    .mult {
+      background-color: rgb(227, 227, 12);
+      color: white;
+    }
+
+    .add {
+      background-color: rgb(9, 222, 9);
+      color: white;
+    }
+
+    .point {
+      background-color: #f2f2f2;
+    }
+
+    .equal {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-        <input type="number" name="" id="display">
-
-        <button class="value">1</button>
-        <button class="value"  data-="">2</button>
-
-
+  <div class="container">
+    <div class="toggleButton">
+      <button type="submit" id="toggleB">Dark</button>
     </div>
-    
+    <div class="calc">
+      <div class="row row1">
+        <input type="text" disabled id="displayF" />
+      </div>
+      <div class="row row2">
+        <button class="button percentage">%</button>
+        <button class="button root">√</button>
+        <button class="button buttonCE">CE</button>
+        <button class="buttonC button">C</button>
+      </div>
+      <div class="row row3">
+        <button class="buttonN button">7</button>
+        <button class="buttonN button">8</button>
+        <button class="buttonN button">9</button>
+        <button class="buttonO button sub">-</button>
+      </div>
+      <div class="row row4">
+        <button class="buttonN button">4</button>
+        <button class="buttonN button">5</button>
+        <button class="buttonN button">6</button>
+        <button class="buttonO button devide">÷</button>
+      </div>
+      <div class="row row5">
+        <button class="buttonN button">1</button>
+        <button class="buttonN button">2</button>
+        <button class="buttonN button">3</button>
+        <button class="buttonO button mult">x</button>
+      </div>
+      <div class="row row6">
+        <button class="button point">.</button>
+        <button class="buttonN button">0</button>
+        <button class="buttonE button">=</button>
+        <button class="buttonO button add">+</button>
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+
 </body>
+
 </html>

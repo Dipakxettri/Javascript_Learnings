@@ -29,17 +29,17 @@
 
 <!-- Clone an object using Object.assign(). -->
 
-Merge two objects into a single object.
+<!-- Merge two objects into a single object. -->
 
-Write a function that takes an object and returns all keys as an array.
+<!-- Write a function that takes an object and returns all keys as an array. -->
 
-Write a function that takes an object and returns all values as an array.
+<!-- Write a function that takes an object and returns all values as an array. -->
 
-Convert an object to an array of key-value pairs.
+<!-- Convert an object to an array of key-value pairs. -->
 
-Convert an array of key-value pairs to an object.
+<!-- Convert an array of key-value pairs to an object. -->
 
-Use Object.entries() to loop through key-value pairs.
+<!-- Use Object.entries() to loop through key-value pairs. -->
 
 🧠 Logical/Object Problems (21–30)
 Count the frequency of each character in a string and store it in an object.

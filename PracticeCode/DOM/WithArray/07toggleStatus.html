@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box active">1</div>
+    <div class="box active">2</div>
+    <div class="box active">3</div>
+    <div class="box active">4</div>
+
+    <script>
+
+        let boxes = document.querySelectorAll(".box");
+
+        boxes.forEach(element => {
+            
+            element.addEventListener("click", (e)=> {
+                if(e.target.getAttribute("class") == "box active"){
+                    e.target.setAttribute("class", "div unactive")
+                    console.log(e.target.getAttribute("class"));
+                    
+                }
+
+                else{
+                    e.target.setAttribute("class", "box active")
+                    console.log(e.target.getAttribute("class"));
+                }
+            })
+        });
+    </script>
+
+    
+</body>
+</html>

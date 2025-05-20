@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Q: Why would you convert querySelectorAll to an array, and how? -->
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <script>
+        const boxes = document.querySelectorAll(".box");
+        let array = Array.from(boxes);// we convert nodelist to an array to unlock a full power of array methods and funcanilities that nodeList does't proide.
+        console.log(array);
+        
+
+    </script>
+    
+</body>
+</html>
