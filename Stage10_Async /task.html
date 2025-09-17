@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        const start_btn = document.querySelector("#start");
+        const stop_btn = document.querySelector("#stop");
+
+        let setIntr; 
+        
+        const printSomething = () => {
+            console.log("Hello",Date.now());
+        }
+
+        start_btn.addEventListener("click", () => {
+            setIntr = setInterval(printSomething, 2000);
+        })
+
+        stop_btn.addEventListener("click", () => {
+            clearInterval(setIntr);
+        })
+
+
+
+    </script>
+
+    
+</body>
+</html>

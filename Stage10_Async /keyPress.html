@@ -7,16 +7,15 @@
 </head>
 <body>
 
+<Input id="press"></Input>
+
     <script>
-        const loadscript = (src, callback) => {
-          let sc = document.createElement("script");
-          sc.src = src;
-          sc.onload = callback("Deepak");
-          
-        }
-        
+        const btn = document.getElementById("press");
+        document.addEventListener("keydown", (event) => {
+            console.log(event.keyCode);
+            
+        })
     </script>
-    
     
 </body>
 </html>

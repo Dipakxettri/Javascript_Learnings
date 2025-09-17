@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited colors ofn background</title>
+</head>
+<body>
+
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+
+
+    <script>
+
+        // Generate random colors
+        const randomColors = () => {
+            const hex = "0123456789ABCDEF";
+            let color = '#';
+
+            for(let i = 0; i<6; i++){
+                color += hex[Math.floor(Math.random()*15)];
+            }
+
+            return color;
+        }
+
+        const body = document.getElementsByTagName("body");
+
+        let  interval;
+        const start = () => {
+            if(!interval){
+                interval = setInterval(() => {
+                body[0].style.backgroundColor = randomColors();
+
+            },1000)
+            }
+            
+        }
+
+        const stop = () => {
+            clearInterval(interval);
+            interval = null;
+        }
+
+    
+
+    </script>
+    
+</body>
+</html>
